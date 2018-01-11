@@ -1,6 +1,6 @@
 {% set name = "colormath" %}
-{% set version = "2.1.1" %}
-{% set sha256 = "003a2b2d9c1f43aa7d90addf1863fb2d822463c839b1166ae3092950792f9707" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "3d4605af344527da0e4f9f504fad7ddbebda35322c566a6c72e28edb1ff31217" %}
 
 package:
   name: {{ name|lower }}
@@ -10,10 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    # Support networkx2, fixed in GitHub but not in a release:
-    # https://github.com/gtaylor/python-colormath/pull/75
-    - networkx2.diff
 
 build:
   number: 1
