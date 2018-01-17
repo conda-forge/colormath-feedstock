@@ -17,9 +17,7 @@ Delta E, and density to spectral.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/colormath-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/colormath-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/colormath-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/colormath-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/colormath-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/colormath-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/colormath-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/colormath-feedstock)
 
 Current release info
 ====================
