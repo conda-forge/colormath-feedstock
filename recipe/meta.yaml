@@ -8,25 +8,27 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
     - networkx >=2.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - colormath
 
