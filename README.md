@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colormath-feeds
 
 Home: https://github.com/gtaylor/python-colormath
 
-Package license: BSD
+Package license: BSD-3-Clause
 
 Summary: Color math and conversion library.
 
