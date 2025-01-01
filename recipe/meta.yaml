@@ -13,13 +13,14 @@ source:
 
 build:
   noarch: python
-  number: 3
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 4
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - python {{ python_min }}
     - setuptools
+    - pip
 
   run:
     - python >={{ python_min }}
@@ -39,7 +40,7 @@ about:
     This module implements a large number of different
     color operations such as color space conversions,
     Delta E, and density to spectral.
-  license: BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   dev_url: https://github.com/gtaylor/python-colormath
